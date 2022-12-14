@@ -5,7 +5,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>트래블러1</title> 
+		<title>트래블러</title> 
 		<c:import url="/WEB-INF/views/layout/head.jsp" />
 	</head>
 	<body>
