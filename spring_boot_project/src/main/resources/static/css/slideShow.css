@@ -38,6 +38,8 @@
 	left: 4%;
 	opacity: 0.8;
 	cursor: pointer;
+	width: 100px;
+	height: 100px;
 }
 
 #nextButton{
@@ -46,6 +48,8 @@
 	right: 4%;
 	opacity: 0.8;
 	cursor: pointer;
+	width: 100px;
+	height: 100px;
 }
 
 #prevButton:hover{opacity: 1;}

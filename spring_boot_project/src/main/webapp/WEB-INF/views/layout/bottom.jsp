@@ -14,6 +14,6 @@
             	 		<li><a href="#">ⓒ 트래블러</a></li>
             	 	</ul>
             	 </div>
-            	 <div id="moveToTopBox"><img src="<c:url value='/image/moveToTop.png'/>" id="moveToTop"></div>
+            	 <div id="moveToTopBox"><img src="<c:url value='/image/moveToTop.png'/>" id="moveToTop" ></div>
             	</div>
             </footer>
