@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+/* menu.css */
+
+/*  모든 <ul> 태그에 적용 */
+
+ul{
+	margin-top:0;
+	padding: 0;
+	list-style: none; 
+}
+
+/********* TOP MENU  ******/
+#topMenuBox{
+	float: right;;
+	font-weight: bold;
+	padding-right: 10px;
+	text-decoration:none;
+}
+#topMenuBox a{
+	margin-bottom:50px;
+	color:#bfeaff;
+}
+/********* MAIN MENU  ******/
+#mainMenuBox {
+	width:100%;
+	height:35px;
+	line-height:35px; 
+	background-color:#bfeaff;
+	z-index:20; /* 스크롤 시 위에 오도록 */
+	float:left;
+	border-radius: 15px;
+}
+
+#mainMenuBox ul{
+	margin: 0;
+}
+
+#mainMenuBox ul li{
+	float: left;
+	text-align: center;
+	width:16%;
+	height: 30px;
+	line-height: 30px;
+}
+
+#mainMenuBox ul li a{
+	text-decoration: none;
+	color:#ffffff;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+#mainMenuBox ul li a:hover{
+color:black;
+} 
+
+/********* BOTTOM MENU  ******/
+
+#bottomMenuBox{
+	height: 30px;
+	line-height: 30px;
+}
+
+#bottomMenuBox ul li{
+	display: inline-block;
+	text-align: center;
+	padding: 5px;
+}
+
+#bottomMenuBox ul li a{
+	color:white;
+	font-weight: bold;
+	text-decoration: none;
+}
+#Login,#SignUp{
+	font-weight: bold;
+	color:black;
+	text-decoration: none;
+}
+

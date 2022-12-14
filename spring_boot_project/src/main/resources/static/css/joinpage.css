@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+body {padding:50px;}
+
+h2{
+	color:#392D9E;
+}
+
+td{
+	color:grey;
+	font-size:12px;
+}
+
+input[type="button"]{
+	font-size:11px;
+}
+input[type="submit"]{
+	text-decoration:none;
+	border-radius:5px; 
+	font-size:12px;
+	font-weight:bold;
+	color:#fff;
+	background-color:#392D9E;
+	
+}
