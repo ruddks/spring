@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+
+/* 본문 로그인 창 */
+
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+ }
+
+        body {
+            background-color: #1BBC9B;
+        }
+
+        section {
+         background-color: #1BBC9B;
+            margin: auto;
+            /* width: 300px; */
+            background-color: #EEEFF1;
+            border-radius: 5px;
+            text-align: center;
+            text-item: center;
+            padding:20px;
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .in {
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            background-color: #1BBC9B;
+            margin-bottom: 30px;
+            color: white;
+        }
