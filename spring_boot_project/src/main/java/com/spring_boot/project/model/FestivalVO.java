@@ -12,7 +12,8 @@ public class FestivalVO {
 	private Date fesFirst;
 	@DateTimeFormat(pattern="yyyy-MM-dd")
 	private Date fesLast;
-    public String getFesNo() {
+	private String regionName;
+	public String getFesNo() {
 		return fesNo;
 	}
 	public void setFesNo(String fesNo) {
@@ -42,11 +43,13 @@ public class FestivalVO {
 	public void setFesLast(Date fesLast) {
 		this.fesLast = fesLast;
 	}
-	public String getRegionNo() {
-		return regionNo;
+	public String getRegionName() {
+		return regionName;
 	}
-	public void setRegionNo(String regionNo) {
-		this.regionNo = regionNo;
+	public void setRegionName(String regionName) {
+		this.regionName = regionName;
 	}
-	private String regionNo;
+    
+	
+	
 }

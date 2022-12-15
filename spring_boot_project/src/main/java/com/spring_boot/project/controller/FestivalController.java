@@ -7,20 +7,19 @@ import java.util.HashMap;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.spring_boot.project.model.FestivalVO;
-import com.spring_boot.project.service.IFestivalService;
+import com.spring_boot.project.service.FestivalService;
 
 
 
 @Controller
 public class FestivalController {
 	@Autowired
-	private IFestivalService service;
+	private FestivalService service;
 	
 	@RequestMapping("/festival")
 	public String festival() {
