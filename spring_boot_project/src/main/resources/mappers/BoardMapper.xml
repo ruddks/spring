@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="com.spring_boot.project.dao.IBoardDAO">
+<resultMap id="boaResult" type="com.spring_boot.project.model.BoardVO">
+<result property="id"  column="id"  />
+<result property="title"  column="title"  />
+<result property="content"  column="content"  />
+<result property="writer"  column="writer"  />
+<result property="viewCnt"  column="viewCnt"  />
+<result property="createdDate"  column="createdDate"  />
+<result property="modifiedDate"  column="modifiedDate"  />
+</resultMap>
+
+<!-- 게시판 전체 보기-->
+  <select id="listAllBoard" resultMap="boaResult">
+  		SELECT * FROM board
+  </select>
+  
+   <insert id="writeboard" parameterType="com.spring_boot.project.model.BoardVO">
+  		INSERT INTO board (id, title, content, writer, viewCnt, createDate,modifiedDate)
+  		VALUES (#{id}, #{title}, #{content}, #{writer}, #{viewCnt}, #{createdDate},#{modifiedDate})
+  </insert>
+  <select id="boardread" parameterType="string" 
+  												   resultType="com.spring_boot.project.model.BoardVO">
+  		SELECT * FROM board WHERE id = #{id}
+  </select>
+
+</mapper>
