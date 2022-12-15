@@ -27,7 +27,7 @@
             	<hr>
             </header>   
             <nav>
-			<form action="https://search.naver.com/search.naver">
+			<form action="/festival/festivalRegList/${regionName }">
 				<div class="search">
 					<input type="text" name="query" value="">
 					<button type="submit">검색</button>

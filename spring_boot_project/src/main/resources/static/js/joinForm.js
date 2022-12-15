@@ -3,10 +3,11 @@
  */
  
 
- $(document).ready(function(){
+/* $(document).ready(function(){
  	$('#joinForm').on('submit', function(){
  	//폼이 submit 되지 않도록 기본 기능 중단
- 		event.preventDefault();
+ 		event.preventDefault();*/
+ 		
  		
         $('#joinForm').on('submit', function(){ 
 			if ($('#memName').val() == "") {
@@ -55,10 +56,8 @@
 				return false;
 			}
 		    
-		}); 	
+		 	
 	}); 
- });
-	
-	
+
 	
 	

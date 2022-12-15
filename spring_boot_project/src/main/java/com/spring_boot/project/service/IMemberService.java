@@ -9,4 +9,5 @@ public interface IMemberService {
 
 	void insertMember(MemberVO vo);
 	public String idCheck(String memId); // 회원가입 아이디 중복 확인
+	
 }
