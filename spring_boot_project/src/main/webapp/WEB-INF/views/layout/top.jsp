@@ -30,9 +30,8 @@
             
 			 <form action="#">
 				<div class="search">
-				<a href="<c:url value='/festival/festivalSearchForm'/>">상품 검색1 </a>
-				<a href="<c:url value='/festivalListAll' />">축제 목록</a>
-            <a href="<c:url value='/festival/festivalListAll'/>">전체상품 조회 </a>
+				<a href="<c:url value='/festival/festivalSearchForm'/>">축제 검색 </a> &nbsp;
+            <a href="<c:url value='/festival/festivalListAll'/>">전체 축제 조회 </a>
 					<input type="text" name="query" value="">
 					<button type="submit">검색</button>
 				</div>

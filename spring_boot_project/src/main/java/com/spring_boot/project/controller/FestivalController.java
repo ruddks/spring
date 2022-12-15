@@ -58,7 +58,7 @@ public class FestivalController {
 			// festivalService의  listAllfestival() 호출 (festivalService의 객체 필요 : DI 설정필요)
 			ArrayList<FestivalVO> fesList = service.listAllFestival();
 			model.addAttribute("fesList", fesList);
-			return "festival/festivalAllListView"; //festivalAllListView.jsp 페이지로 출력
+			return "/festival/festivalAllListView"; //festivalAllListView.jsp 페이지로 출력
 		}
 	
 	// 상품 검색 폼1 열기

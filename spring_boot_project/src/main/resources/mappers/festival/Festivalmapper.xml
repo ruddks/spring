@@ -14,7 +14,7 @@
   	</resultMap>
   
   <!-- 전체 상품 조회 -->
-  <select id="listAllfestival" resultMap="fesResult">
+  <select id="listAllFestival" resultMap="fesResult">
   		SELECT * FROM festival ORDER BY fesNo
   </select>
   
@@ -25,7 +25,7 @@
   			<when test="type != null and type.equals('fesName')">
   				fesName Like CONCAT('%', #{keyword}, '%')
   			</when>
-  			<when test="type != null and type.equals('regionName ')">
+  			<when test="type != null and type.equals('regionName')">
   				regionName  Like CONCAT('%', #{keyword}, '%')
   			</when>
   		</choose>
