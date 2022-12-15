@@ -8,7 +8,19 @@
 	            	</div>
         		<span id="a"><a href="<c:url value='/festival' />">전국 지역축제</a></span>
 	           <div id="topMenuBox">
-						<a href="<c:url value='loginpage' />" id="Login">로그인</a>&nbsp;&nbsp;<a href="<c:url value='joinpage' />"id="SignUp">회원가입</a>
+						<!-- 로그인 하기 전에 보여줄 메뉴 항목 -->
+						<c:if test="${empty sessionScope.sid }">
+							<a href="<c:url value='/member/loginForm'/>">로그인</a> 
+							<a href="<c:url value='/member/joinForm'/>">회원가입</a>
+						</c:if>		
+						
+						<!-- 로그인 성공 후 보여줄 메뉴 항목 -->
+						<c:if test="${not empty sessionScope.sid }">
+							${sessionScope.sid}님 환영합니다! 
+							<a href="<c:url value='/member/logout'/>">로그아웃</a> 
+							<a href="<c:url value='/board/boardList'/>">게시판</a>  
+						</c:if>	            	
+	            			<a href="#">고객센터22</a>
 					</div>
             	</div>
             </header>
