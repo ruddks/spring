@@ -20,6 +20,7 @@ ul{
 #topMenuBox a{
 	margin-bottom:50px;
 	color:#bfeaff;
+	text-decoration: none;
 }
 /********* MAIN MENU  ******/
 #mainMenuBox {
