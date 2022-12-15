@@ -38,7 +38,7 @@
 	            	</tr>
 		            <tr>
 		            	<th>비밀번호</th>
-		            	<td><input type="password" id="memPwd" name="memPw"></td>
+		            	<td><input type="password" id="memPw" name="memPw"></td>
 	            	</tr>
 		            <tr>
 		            	<th>휴대폰 번호</th>

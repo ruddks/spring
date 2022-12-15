@@ -2,84 +2,62 @@
  *  formCheck.js
  */
  
- 
+
  $(document).ready(function(){
-		$('#name').focus()
-		$('input[type="text"], input[type="password"]').on('focus', function() {
-			$(this).css('background', 'rgb(232, 232, 232)');
-		});
-		$(':text, :password').on('blur', function() {
-			 $(this).css('background', 'white');
-		 });
-		$('#hp2').on('keyup', function() {
-			if($(this).val().length == 4)
-				$('#hp3').focus();  
-		});
-		$(document).on('keydown', function(e){
-			if(e.keyCode == 13) return false; 
-		});
-	
-		$('#id').on('keydown', function(e) {
-			if ($('#id').val() != "" && e.keyCode == 13) {
-				$('#pwd').focus();
-			}
-		});
-		
-		
+ 	$('#joinForm').on('submit', function(){
+ 	//폼이 submit 되지 않도록 기본 기능 중단
+ 		event.preventDefault();
+ 		
         $('#joinForm').on('submit', function(){ 
-			if ($('#name').val() == "") {
+			if ($('#memName').val() == "") {
 				alert("성명을 입력하세요");
-				$('#name').focus();				
+				$('#memName').focus();				
 				return false;
 			}
-			if ($('#id').val() == "") {
+			if ($('#memId').val() == "") {
 				alert("아이디를 입력하세요");
-				$('#id').focus();				
+				$('#memId').focus();				
 				return false;
 			}
 			
-			if ($('#pwd').val() == "") {
+			if ($('#idCheckBtn').val() == "") {
+				alert("아이디 중복체크를 하세요");
+				$('#idCheckBtn').focus();				
+				return false;
+			}
+			
+			if ($('#memPw').val() == "") {
 				alert("비밀번호를 입력하세요");
-				$('#pwd').focus();				
+				$('#memPw').focus();				
 				return false;
 			}
 			 
-			if ($('#pwdcheck').val() == "") {
-				alert("비밀번호 확인을 입력하세요");				
-				$('#pwdcheck').focus();				
-				return false;
-			}
-			if ($('#month').val() == "") {
-				alert("생년월일을 입력하세요");				
-				$('#month').focus();				
-				return false;
-			}
-			if ($('#hp2').val() == "") {
+			
+			
+			if ($('#memHp1').val() == "") {
 				alert("휴대폰 번호를 입력하세요");				
-				$('#hp2').focus();				
+				$('#memHp1').focus();				
 				return false;
 			}
-			if ($('#hp3').val() == "") {
+			if ($('#memHp2').val() == "") {
 				alert("휴대폰 번호를 입력하세요");				
-				$('#hp3').focus();				
+				$('#memHp2').focus();				
 				return false;
 			}
-			if ($('#email').val() == "") {
+			if ($('#memHp3').val() == "") {
+				alert("휴대폰 번호를 입력하세요");				
+				$('memHp3').focus();				
+				return false;
+			}
+			if ($('#memEmail').val() == "") {
 				alert("이메일을 입력하세요");				
-				$('#email').focus();				
+				$('#memEmail').focus();				
 				return false;
 			}
-		    if(!$('input[type="radio"][name="gender"]').is(':checked')) {
-				alert("성별을 선택하세요");
-				return false;
-			}
-		    if(!$('input[type="radio"][name="emailcheck"]').is(':checked')) {
-				alert("이메일 수신 여부를 선택하세요");
-				return false;
-			}
+		    
 		}); 	
-	});
-	
+	}); 
+ });
 	
 	
 	
