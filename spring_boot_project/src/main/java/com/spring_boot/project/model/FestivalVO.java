@@ -1,4 +1,4 @@
-package com.spring_boot.project.model;
+/*package com.spring_boot.project.model;
 
 import java.util.Date;
 
@@ -50,3 +50,4 @@ public class FestivalVO {
 	}
 	private String regionNo;
 }
+*/

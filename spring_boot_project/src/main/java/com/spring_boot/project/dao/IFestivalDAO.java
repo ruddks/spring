@@ -1,4 +1,4 @@
-package com.spring_boot.project.dao;
+/*package com.spring_boot.project.dao;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -12,3 +12,4 @@ public interface IFestivalDAO {
 	public ArrayList<FestivalVO> regListFestival(String regionNo);
 	public FestivalVO detailViewFestival(String fesNo);
 }
+*/

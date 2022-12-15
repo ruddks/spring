@@ -1,4 +1,4 @@
-package com.spring_boot.project.controller;
+/*package com.spring_boot.project.controller;
 
 import java.util.ArrayList;
 
@@ -55,12 +55,12 @@ public class FestivalController {
 		}
 		
 		// 상품 상세 조회
-		@RequestMapping("/festival/detailViewFestival/{fesNo}")
-		public String detailViewfestival(@PathVariable String fesNo, Model model) {
+		@RequestMapping("/festival/detailViewFestival/{fesName}")
+		public String detailViewfestival(@PathVariable String fesName, Model model) {
 			// 상품번호 전달하고 해당 상품 상세 정보 받아오기 (1개 상품에 관한 정보)
-			FestivalVO fes = service.detailViewFestival(fesNo);
+			FestivalVO fes = service.detailViewFestival(fesName);
 			model.addAttribute("fes", fes);
 			
 			return "festival/festivalDetailView";
 		}
-}
+}*/

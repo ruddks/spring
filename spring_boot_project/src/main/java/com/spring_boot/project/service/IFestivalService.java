@@ -1,4 +1,4 @@
-package com.spring_boot.project.service;
+/*package com.spring_boot.project.service;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -14,3 +14,4 @@ public interface IFestivalService {
 	public ArrayList<FestivalVO> regListFestival(String regionNo);
 	public FestivalVO detailViewFestival(String fesNo);
 }
+*/

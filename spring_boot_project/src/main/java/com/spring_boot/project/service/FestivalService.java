@@ -1,4 +1,4 @@
-package com.spring_boot.project.service;
+/*package com.spring_boot.project.service;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -41,4 +41,4 @@ public class FestivalService implements IFestivalService {
 	}
 	
 
-}
+}*/
