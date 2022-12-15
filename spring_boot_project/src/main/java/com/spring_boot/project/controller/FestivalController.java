@@ -7,6 +7,7 @@ import java.util.HashMap;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -25,37 +26,36 @@ public class FestivalController {
 	public String festival() {
 		return "/festival";
 	}
-	@RequestMapping("/festival_서울")
-	public String festivalregionName() {
-		return	"/festival/festival_서울";
-	}
-	@RequestMapping("/festival_경기도")
-	public String 경기도() {
-		return	"/festival/festival_경기도";
-	}
-	@RequestMapping("/festival_강원도")
-	public String 강원도() {
-		return	"/festival/festival_강원도";
-	}
-	@RequestMapping("/festival_충청도")
-	public String 충청도() {
-		return	"/festival/festival_충청도";
-	}
 	
-	@RequestMapping("/festival_경상도")
-	public String 경상도() {
-		return	"/festival/festival_경상도";
-	}
-	@RequestMapping("/festival_전라도")
-	public String 전라도() {
-		return	"/festival/festival_전라도";
-	}
+	  @RequestMapping("/festival_서울") 
+	  public String festivalregionName() { 
+		  return "/festival/festival_서울"; }
+	  
+	 @RequestMapping("/festival_경기도")
+	 public String 경기도() { 
+		 return "/festival/festival_경기도"; }
+	  
+	  @RequestMapping("/festival_강원도")
+	  public String 강원도() { 
+		  return  "/festival/festival_강원도"; }
+	  
+	  @RequestMapping("/festival_충청도")
+	  public String 충청도() { 
+		  return  "/festival/festival_충청도"; }
+	  
+	  @RequestMapping("/festival_경상도")
+	  public String 경상도() { 
+		  return "/festival/festival_경상도"; }
+	  
+	  @RequestMapping("/festival_전라도")
+	  public String 전라도() { 
+		  return  "/festival/festival_전라도"; }
+	 
 	
 	
 	// 전체 상품 조회 : 서비스 요청 (요청 이름 :/festival/festivalListAll)
 		@RequestMapping("/festival/festivalListAll")
 		public String viewfestivalListAll(Model model) {
-			// festivalService의  listAllfestival() 호출 (festivalService의 객체 필요 : DI 설정필요)
 			ArrayList<FestivalVO> fesList = service.listAllFestival();
 			model.addAttribute("fesList", fesList);
 			return "/festival/festivalAllListView"; //festivalAllListView.jsp 페이지로 출력
@@ -76,6 +76,8 @@ public class FestivalController {
 			ArrayList<FestivalVO> fesList = service.festivalSearch(param);		
 			return fesList;
 		}
+		
+		
 		
 	
 }

@@ -1,18 +1,47 @@
 @charset "UTF-8";
 
-#headerBox{
-	height: 60px;
-	line-height: 60px;
-	padding: 0;
+.intro_bg{
+	background: url('../image/festival6.jpg')  fixed;
+	width:1280px;	
+	height:718px;
+}
+header {
+    display: block;
 }
 
-#logoBox{
-	float: left;
-	height: 60px;
-	line-height: 60px;
+#headerBox {
+    height: 60px;
+    line-height: 60px;
+    padding: 0;
+}
+#logoBox {
+    float: left;
+    height: 60px;
+    line-height: 60px;
 }
 #logoImg{
 	height: 60px;
+}
+h2{
+	font-size:6em;
+	width:350px;
+	color:#fff;
+	font-family:sans-serif;
+	position:absolute;
+	top:150px;
+	left:100px;
+	animation:slide 2s ease-out;
+}
+
+@keyframes slide{
+	from{
+		left:800px;
+		opacity:0;
+	}
+	to{
+		left:100px;
+		opacity:1;
+	}
 }
 
 #Introduction{
@@ -22,6 +51,13 @@
 	text-align:center;
 	padding: 10px;
 	line-height: 60px;
+}
+
+#KoreaMap{
+	width: 500px;
+	height: 720px;
+	background-color: #EEEFF1;
+	
 }
 
 .search{
@@ -45,10 +81,6 @@
   cursor: pointer;
 }
 
-/* #KoreaMap{
-	width: 600px;
-	height: 720px;
-} */
 
 
 
