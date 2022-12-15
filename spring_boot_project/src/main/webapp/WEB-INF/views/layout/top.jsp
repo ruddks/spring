@@ -19,7 +19,7 @@
 							<a href="<c:url value='/member/logout'/>">로그아웃</a> 
 							<a href="<c:url value='/board/boardList'/>">게시판</a>  
 						</c:if>	            	
-	            			<a href="#">고객센터22</a>
+	            			<a href="#">고객센터</a>
 	            	</div>
             	</div>
             	
