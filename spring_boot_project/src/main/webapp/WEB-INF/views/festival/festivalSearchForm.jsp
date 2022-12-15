@@ -6,42 +6,44 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>축제 조회</title>
-		<c:import url="/WEB-INF/views/layout/head.jsp" />
+		<title>상품 검색</title>
+		<style>
+			#wrap{
+				margin:0 auto;
+				width: 100%;
+				text-align: center;
+			}
 			
+			table{
+				margin:0 auto;
+				width: 800px;
+			}
+			
+			table th{ 
+				background-color: skyblue;
+			}
+		</style>
+		<script src="<c:url value='/js/jquery-3.6.1.min.js'/>"></script>
+		<script src="<c:url value='/js/festivalSearch.js'/>"></script>
 	</head>
 	<body>
 		<div id="wrap">
-			<!--  top -->         
-        	<c:import url="/WEB-INF/views/layout/top.jsp" />
-			
-			<h3>축제</h3>
-			<br><br>
-			<form method="post" > 
-				<table border="1" width="800">
-						<tr><td>축제 목록 번호 </td>
-								<td><input type="hidden" name="fesNo" value="${fes.fesNo }">${fes.fesNo }</td></tr>
-						<tr><td>축제명  </td><td>${fes.fesName }</td></tr>
-						<tr><td>축제 설명  </td><td>${fes.fesDescript } </td></tr>
-						<tr><td>축제 시작일 </td><td>${fes.fesFirst  } </td></tr>
-						<tr><td>축제 종료일 </td><td>${fes.fesLast  } </td></tr>
-						<tr><td>지역</td>	${regionName  }<td></td></tr>
-						
-						
-					</table>
-				</form>	
-				
-				<br><br>
-				<a href="<c:url value='/festival/festivalregList/${fes.regionNo}'/>"><button>상품 목록 보기</button></a>
-				
-				
-			 <!--  bottom -->         
-        	<c:import url="/WEB-INF/views/layout/bottom.jsp" />
-    
+		<h3>상품 검색</h3>
+		<form id="fesSearchFrm">
+			<select id="type" name="type">
+				<option value="">검색 조건 선택</option>
+				<option value="fesName">축제명</option>
+				<option value="regionName">지역</option>
+			</select>
+			<input type="text" name="keyword">
+			<input type="submit" value="검색">
+		</form>
+		
+		<!-- 검색 결과 출력  -->
+		<div id="searchResultBox"></div>
 		</div>
 	</body>
 </html>
-
 
 
 

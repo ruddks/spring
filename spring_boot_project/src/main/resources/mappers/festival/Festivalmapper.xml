@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <mapper namespace="com.spring_boot.project.dao.IfestivalDAO">
+  	<resultMap id="fesResult" type="com.spring_boot.project.model.festivalVO" >
+  		<result property="fesNo"  column="fesNo"  />
+  		<result property="fesName"  column="fesName"  />
+  		<result property="fesDescript "  column="fesDescript "  />
+  		<result property="fesFirst "  column="fesFirst "  />
+  		<result property="fesLast "  column="fesLast "  />
+  		<result property="regionName "  column="regionName "  />
+  	</resultMap>
+  
+  <!-- 전체 상품 조회 -->
+  <select id="listAllfestival" resultMap="fesResult">
+  		SELECT * FROM festival ORDER BY fesNo
+  </select>
+  
+  <!-- 상품 검색  -->
+  <select id="festivalSearch" parameterType="hashmap" resultMap="fesResult">
+  		SELECT * FROM festival WHERE
+  		<choose>
+  			<when test="type != null and type.equals('fesName')">
+  				fesName Like CONCAT('%', #{keyword}, '%')
+  			</when>
+  			<when test="type != null and type.equals('regionName ')">
+  				regionName  Like CONCAT('%', #{keyword}, '%')
+  			</when>
+  		</choose>
+  </select>
+  
+  </mapper>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
