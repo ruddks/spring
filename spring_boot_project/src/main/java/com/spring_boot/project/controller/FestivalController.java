@@ -64,7 +64,7 @@ public class FestivalController {
 	// 상품 검색 폼1 열기
 		@RequestMapping("/festival/festivalSearchForm")
 		public String festivalSearchForm() {
-			return "festival/festivalSearchForm";
+			return "/festival/festivalSearchForm";
 		}
 		
 		// 상품 검색1 처리
@@ -76,5 +76,6 @@ public class FestivalController {
 			ArrayList<FestivalVO> fesList = service.festivalSearch(param);		
 			return fesList;
 		}
+		
 	
 }

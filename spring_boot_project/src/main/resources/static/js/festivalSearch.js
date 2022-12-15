@@ -31,7 +31,7 @@
 					$('#resultTable').append('<tr align="center"><td colspan="4">찾는 축제가 없습니다</td></tr>');
 				} else {
 					for(var i=0; i < result.length; i++) {
-						var date = new Date(result[i].fesDate);
+						var date = new Date(result[i].fesFirst );
 						$('#resultTable').append('<tr><td>' + result[i].fesNo + '</td><td>' +
 																							result[i].fesName + '</td><td>' +
 									date.getFullYear() + "-" + (date.getMonth() + 1)  + "-" + date.getDate()  + '</td><td>' +

@@ -27,12 +27,16 @@
             	<hr>
             </header>   
             <nav>
-			<form action="/festival/festivalRegList/${regionName }">
+            
+			 <form action="#">
 				<div class="search">
+				<a href="<c:url value='/festival/festivalSearchForm'/>">상품 검색1 </a>
+				<a href="<c:url value='/festivalListAll' />">축제 목록</a>
+            <a href="<c:url value='/festival/festivalListAll'/>">전체상품 조회 </a>
 					<input type="text" name="query" value="">
 					<button type="submit">검색</button>
 				</div>
-			</form>
+			</form> 
 		</nav>  
             <nav id="nav">
             <div id="mainMenuBox">
