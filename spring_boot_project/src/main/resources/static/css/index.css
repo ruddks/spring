@@ -24,11 +24,6 @@
 	line-height: 60px;
 }
 
-#KoreaMap{
-	width: 500px;
-	height: 720px;
-} 
-
 .search{
   text-align:right;
   width: 100%;
@@ -50,6 +45,10 @@
   cursor: pointer;
 }
 
+#KoreaMap{
+	width: 600px;
+	height: 720px;
+}
 
 
 

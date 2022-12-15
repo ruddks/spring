@@ -6,7 +6,7 @@
  
  $(document).ready(function(){
 	
-	$('img[usemap]').rwdImageMaps();
+	
 	
 	$(window).on('scroll',function(){
 		
