@@ -1,14 +1,16 @@
 @charset "UTF-8";
 
-#headerBox {
-	height:100px;
-	line-height:60px;
-	padding:0;
+ #headerBox{
+	display:flex;
+	justify-content:space-between; 
+	align-items:center;
+	
+	
 }
 #logoBox{
 	float: left;
-	height: 60px;
-	line-height: 60px;
+    margin: 0;
+
 }
 #logoImg{
 	height: 60px;
@@ -144,4 +146,10 @@ h3{
   border-radius: 15px;
   color: #ffffff; 
   cursor: pointer;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: #e1e6ec;
+    user-select: none;
 }
