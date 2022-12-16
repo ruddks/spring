@@ -6,7 +6,12 @@
         	<div id="logoBox">
 	            		<a href="<c:url value='/'/>"><img src="<c:url value='/image/logo.JPG'/>" id='logoImg'></a>
 	            	</div>
-        		<span id="a"><a href="<c:url value='/specialties'/>">전국 특산물</a></span>
+	            	
+	            	  	
+	          
+				
+        		<span id="a"><a href="<c:url value='/specialties'/>">전국 특산물</a>
+        		
 	           <div id="topMenuBox">
 						<!-- 로그인 하기 전에 보여줄 메뉴 항목 -->
 						<c:if test="${empty sessionScope.sid }">
@@ -25,23 +30,16 @@
 					
             	</div>
             </header>
-            <nav>
-			<form action="https://search.naver.com/search.naver">
-				<div class="search">
-					<input type="text" name="query" value="">
-					<button type="submit">검색</button>
-				</div>
-			</form>
-		</nav>  
+            
             <nav id="nav">
             <div id="mainMenuBox">
-            <ul id="menuItem">
-           			    <li><a href="<c:url value='/specialties_서울' />" id="서울">서울</a></li>
-           			    <li><a href="<c:url value='/specialties_경기도' />" id="경기도">경기도</a></li>
-           			    <li><a href="<c:url value='/specialties_강원도' />" id="강원도">강원도</a></li>
-           			    <li><a href="<c:url value='/specialties_충청도' />" id="충청도">충청도</a></li>
-           			    <li><a href="<c:url value='/specialties_경상도' />" id="경상도">경상도</a></li>
-           			    <li><a href="<c:url value='/specialties_전라도' />" id="전라도">전라도</a></li>
-            		</ul>
+           
+           			   <a href="<c:url value='/specialties_서울'/>" id="서울">서울</a>
+            			<a href="<c:url value='/specialties_경기도'/>" id="경기도">경기도</a>
+            			<a href="<c:url value='/specialties_강원도'/>" id="강원도">강원도</a>
+            			<a href="<c:url value='/specialties_충청도'/>" id="충청도">충청도</a>
+            			<a href="<c:url value='/specialties_경상도'/>" id="경상도">경상도</a>
+            			<a href="<c:url value='/specialties_전라도'/>" id="전라도">전라도</a>
+            		
             	</div>
             </nav>

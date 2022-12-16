@@ -6,6 +6,18 @@
 	            	<div id="logoBox">
 	            		<a href="<c:url value='/'/>"><img src="<c:url value='/image/logo.JPG'/>" id='logoImg'></a>
 	            	</div>
+	            	
+	          <nav>  	
+	          
+				<div class="search">
+					<button id="fesBtn">축제 검색</button>&nbsp;
+					<button id="fesAllBtn">전체 축제 조회</button>
+            	&nbsp;&nbsp;
+					<button id="speBtn">특산물 검색</button>&nbsp;
+					<button id="speAllBtn">전체 특산품 조회</button>
+				</div>
+		
+			</nav>
 	            	<div id="topMenuBox">
 						<!-- 로그인 하기 전에 보여줄 메뉴 항목 -->
 						<c:if test="${empty sessionScope.sid }">
@@ -28,24 +40,17 @@
             </header>   
             <nav>
             
-			 <form action="#">
-				<div class="search">
-				<a href="<c:url value='/festival/festivalSearchForm'/>">축제 검색 </a> &nbsp;
-            <a href="<c:url value='/festival/festivalListAll'/>">전체 축제 조회 </a>
-					<input type="text" name="query" value="">
-					<button type="submit">검색</button>
-				</div>
-			</form> 
+			  
 		</nav>  
             <nav id="nav">
             <div id="mainMenuBox">
-            <ul id="menuItem">
-           			    <li><a href="<c:url value='/specialties_서울'/>" id="서울">서울</a></li>
-            			<li><a href="<c:url value='/specialties_경기도'/>" id="경기도">경기도</a></li>
-            			<li><a href="<c:url value='/specialties_강원도'/>" id="강원도">강원도</a></li>
-            			<li><a href="<c:url value='/specialties_충청도'/>" id="충청도">충청도</a></li>
-            			<li><a href="<c:url value='/specialties_경상도'/>" id="경상도">경상도</a></li>
-            			<li><a href="<c:url value='/specialties_전라도'/>" id="전라도">전라도</a></li>
-            		</ul>
+           <!--  <ul id="menuItem"> -->
+           			   <a href="<c:url value='/specialties_서울'/>" id="서울">서울</a>
+            			<a href="<c:url value='/specialties_경기도'/>" id="경기도">경기도</a>
+            			<a href="<c:url value='/specialties_강원도'/>" id="강원도">강원도</a>
+            			<a href="<c:url value='/specialties_충청도'/>" id="충청도">충청도</a>
+            			<a href="<c:url value='/specialties_경상도'/>" id="경상도">경상도</a>
+            			<a href="<c:url value='/specialties_전라도'/>" id="전라도">전라도</a>
+            		<!-- </ul> -->
             	</div>
             </nav> 

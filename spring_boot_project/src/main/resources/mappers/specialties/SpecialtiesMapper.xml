@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <mapper namespace="com.spring_boot.project.dao.ISpecialtiesDAO">
+  	<resultMap id="speResult" type="com.spring_boot.project.model.SpecialtiesVO" >
+  		<result property="speNo"  column="speNo"  />
+  		<result property="speName"  column="speName"  />
+  		<result property="speDescript "  column="speDescript "  />
+  		<result property="regionName "  column="regionName "  />
+  	</resultMap>
+  
+  <!-- 전체 상품 조회 -->
+  <select id="listAllspecialties" resultMap="speResult">
+  		SELECT * FROM specialties ORDER BY speNo
+  </select>
+  
+  <!-- 상품 검색  -->
+  <select id="specialtiesSearch" parameterType="hashmap" resultMap="speResult">
+  		SELECT * FROM specialties WHERE
+  		<choose>
+  			<when test="type != null and type.equals('speName')">
+  				speName Like CONCAT('%', #{keyword}, '%')
+  			</when>
+  			<when test="type != null and type.equals('regionName')">
+  				regionName  Like CONCAT('%', #{keyword}, '%')
+  			</when>
+  		</choose>
+  </select>
+  
+ 
+  
+  </mapper>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

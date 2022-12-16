@@ -1,7 +1,29 @@
 @charset "UTF-8";
 
+section {
+	margin: auto;
+    /* width: 300px; */
+    height:600px;
+    background-color: #EEEFF1;
+    border-radius: 5px;
+    text-align: center;
+    text-item: center;
+    padding:10px;
+    text-decoration:none;
+}
+
+#joinForm input[type="text"],
+input[type="password"], 
+input[type="email"]{
+	/* width: 100%; */
+    padding: 6px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: none;
+}
+                
 #title {
-	color:red;
+	color:#000;
 	margin-top:30px;
 	margin-bottom:20px;
 	}
@@ -30,10 +52,63 @@
 	}
 
 #joinForm table td{
-	border-bottom:dotted 1px #333333;
+	/* border-bottom:dotted 1px #333333; */
 	}
 	
 #joinForm table #button {
 	text-align:center;
 	border:none;
+	
 	}
+	
+#idCheckBtn, #searchZipBtn{
+	outline:none;
+	border:none;
+	font-weight: bold;
+	text-decoration:none;
+	display:inline; 
+	padding-left:30px;
+	border-radius:50px;	
+	padding:5px 13px;
+	background:#EEEFF1;
+	color:#1C2938;
+	box-shadow:3px 3px 10px 1px rgba(0, 0, 0, .2),
+			   -3px -3px 10px 1px rgba(240, 240, 240, 1);
+}
+
+#idCheckBtn:hover{
+	box-shadow:inset 3px 3px 10px 1px rgba(0, 0, 0, .2),
+			   inset -3px -3px 10px 1px rgba(255, 255, 255, 1);
+}
+
+#searchZipBtn:hover{
+	box-shadow:inset 3px 3px 10px 1px rgba(0, 0, 0, .2),
+			   inset -3px -3px 10px 1px rgba(255, 255, 255, 1);
+}
+
+#joinForm input[type="submit"],
+input[type="reset"]{
+	outline:none;
+	border:none;
+	width:150px;
+	height:40px;
+	font-weight: bold;
+	text-decoration:none;
+	display:inline; 
+	padding-left:30px;
+	border-radius:50px;	
+	padding:5px 13px;
+	/* background:#4E709C; */
+	color:#fff;
+    margin-left: 10px;
+    color: white;
+    
+}
+
+#joinForm input[type="submit"]{
+	background:#425587;
+}
+
+#joinForm input[type="reset"]{
+	background:#90AED6;
+}

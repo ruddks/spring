@@ -29,16 +29,16 @@
 	        	<table>
 		            <tr>
 		            	<th> 성명</th>
-		           		<td><input type="text" id="memName" name="memName" ></td>
+		           		<td><input type="text" id="memName" name="memName" size="20"></td>
 	           		</tr>
 		            <tr>
 		            	<th> ID</th>
-		            	<td><input type="text" id="memId" name="memId" > 
+		            	<td><input type="text" id="memId" name="memId" size="20"> 
 		            		<input type="button" id="idCheckBtn" value="ID 중복 체크"></td>
 	            	</tr>
 		            <tr>
 		            	<th>비밀번호</th>
-		            	<td><input type="password" id="memPw" name="memPw"></td>
+		            	<td><input type="password" id="memPw" name="memPw" size="20"></td>
 	            	</tr>
 		            <tr>
 		            	<th>휴대폰 번호</th>
@@ -55,8 +55,8 @@
 		            	<td colspan="3">
 		            		<input type="text" id="memZipcode" name="memZipcode" size="5" readonly>
 		            		<input type="button" id="searchZipBtn" name="searchZipBtn" value="우편번호 찾기"><br>
-		            		<input type="text" id="memAddress1" name="memAddress1" placeholder="주소 입력" size="70" readonly> <br>
-		            		<input type="text" id="memAddress2" name="memAddress2" placeholder="상세 주소 입력" size="70">
+		            		<input type="text" id="memAddress1" name="memAddress1" placeholder="주소 입력" size="40" readonly> <br>
+		            		<input type="text" id="memAddress2" name="memAddress2" placeholder="상세 주소 입력" size="40">
 	            		</td>
 	            	</tr>
 		            	             

@@ -10,6 +10,7 @@
 	text-align:center;
 	color:#2B2B2B;
 	background-size: 100% 100%;
+	transition:.5s;
 	background-color:#ffffff    ;
 	
 } 
@@ -20,10 +21,19 @@ img{border: 0;margin: 0;}
 
 
 #footerBox div {
-	background-color:#bfeaff;
+	background-color:#1C2938;
 	border:solid 1px #ffffff;	
 	padding:20px;
 	margin:0;
+}
+#footerBox ul li{
+	display:inline;
+	text-decoration:none;
+}
+#footerBox ul li a{
+	
+	text-decoration:none;
+	color:#fff;
 }
 
 #moveToTop{

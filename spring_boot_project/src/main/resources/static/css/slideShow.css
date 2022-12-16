@@ -8,6 +8,7 @@
 	height: 720px;
 	line-height: 720px;
 	border-bottom: solid #ccc 1px;
+	margin:0 auto; 
 }
 
 #slideShowBox{
@@ -15,6 +16,7 @@
 	height: 670px;
 	text-align: center;
 	overflow: hidden;
+	margin:0 auto; 
 }
 
 #slidePanel{

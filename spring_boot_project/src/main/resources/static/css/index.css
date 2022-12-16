@@ -2,23 +2,72 @@
 
 .intro_bg{
 	background: url('../image/festival6.jpg')  fixed;
-	width:1280px;	
-	height:718px;
-}
-header {
-    display: block;
+	width:100%;	
+	height:718px	 
 }
 
-#headerBox {
-    height: 60px;
-    line-height: 60px;
-    padding: 0;
+body{
+	width:100%;
+	min-height:100vh;
+	background:#e1e6ec;
+	user-select:none;
 }
-#logoBox {
+
+
+ #logoBox {
     float: left;
-    height: 60px;
-    line-height: 60px;
+    margin:0;
+    
+} 
+ #headerBox{
+	display:flex;
+	justify-content:space-between; 
+	align-items:center;
+	
+	
 }
+
+#topMenuBox a{
+	text-decoration:none;
+	display:inline; 
+	padding-left:30px;
+	border-radius:50px;	
+	padding:8px 14px;
+	background:#e1e6ec;
+	color:#1C2938;
+	box-shadow:3px 3px 10px 1px rgba(0, 0, 0, .2),
+			   -3px -3px 10px 1px rgba(240, 240, 240, 1);
+}
+
+#topMenuBox a:hover{
+	box-shadow:inset 3px 3px 10px 1px rgba(0, 0, 0, .2),
+			   inset -3px -3px 10px 1px rgba(255, 255, 255, 1);
+}
+.search input{
+	outline:none;
+	border:none;
+	border-radius: 5px;
+}
+.search button{
+	outline:none;
+	border:none;
+	font-weight: bold;
+	text-decoration:none;
+	display:inline; 
+	padding-left:30px;
+	border-radius:50px;	
+	padding:10px 16px;
+	background:#e1e6ec;
+	color:#1C2938;
+	box-shadow:3px 3px 10px 1px rgba(0, 0, 0, .2),
+			   -3px -3px 10px 1px rgba(240, 240, 240, 1);
+}
+
+.search button:hover{
+	box-shadow:inset 3px 3px 10px 1px rgba(0, 0, 0, .2),
+			   inset -3px -3px 10px 1px rgba(255, 255, 255, 1);
+}
+
 #logoImg{
 	height: 60px;
 }
@@ -44,6 +93,8 @@ h2{
 	}
 }
 
+
+
 #Introduction{
 	font-size: 30px;
 	font-weight: bold;
@@ -56,29 +107,9 @@ h2{
 #KoreaMap{
 	width: 500px;
 	height: 720px;
-	background-color: #EEEFF1;
+	background-color: #e1e6ec;
 	
-}
-
-.search{
-  text-align:right;
-  width: 100%;
-  height: 50px;
-}
-.search input {
-  font-size: 18px;
-  border:3px solid #bfeaff; 
-  border-radius: 15px;
-}
-.search button {
-  font-size: 18px;
-  border: none;
-  background-color: #bfeaff; 
-  width: 50px;
-  height: 30px;
-  border-radius: 15px;
-  color: #ffffff; 
-  cursor: pointer;
+	
 }
 
 

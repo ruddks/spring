@@ -10,9 +10,7 @@
 		<link rel="stylesheet" type="text/css" href="<c:url value='/css/loginForm.css' />">
 		<script src="<c:url value='/js/jquery-3.6.1.min.js'/>"></script>
 		<script src="<c:url value='/js/login.js'/>"></script>		 
-		<style>
-			section { margin:50px; }
-		</style>
+		
 	</head>
 	<body>
 		<div id="wrap"> 

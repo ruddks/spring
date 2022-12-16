@@ -7,6 +7,17 @@
  	//폼이 submit 되지 않도록 기본 기능 중단
  		event.preventDefault();
  		
+ 		 if ($('#id').val() == "") {
+		alert("아이디를 입력하세요");
+		$('#id').focus();
+	  return false;
+	}
+	  if ($('#pwd').val() == "") {				
+	  alert("비밀번호를 입력하세요");				
+	  $('#pwd').focus();				
+	  return false;
+	}
+ 		
  		// 서버에 전송하고 결과 받아서 처리
  		$.ajax({
  			type:"post",
