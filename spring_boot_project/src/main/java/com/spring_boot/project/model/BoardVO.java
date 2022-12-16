@@ -1,7 +1,5 @@
 package com.spring_boot.project.model;
 
-import java.time.LocalDate;
-import java.time.LocalDateTime;
 
 public class BoardVO {
 	
@@ -10,8 +8,8 @@ public class BoardVO {
     private String content;                // 내용
     private String writer;                 // 작성자
     private int viewCnt;                   // 조회 수
-    private LocalDateTime createdDate;     // 생성일시
-    private LocalDateTime modifiedDate;    // 최종 수정일시
+    private String createdDate;     // 생성일시
+    private String modifiedDate;    // 최종 수정일시
 	public int getId() {
 		return id;
 	}
@@ -42,18 +40,16 @@ public class BoardVO {
 	public void setViewCnt(int viewCnt) {
 		this.viewCnt = viewCnt;
 	}
-	public LocalDateTime getCreatedDate() {
+	public String getCreatedDate() {
 		return createdDate;
 	}
-	public void setCreatedDate(LocalDateTime createdDate) {
-		createdDate = LocalDateTime.now();
+	public void setCreatedDate(String createdDate) {
 		this.createdDate = createdDate;
 	}
-	public LocalDateTime getModifiedDate() {
+	public String getModifiedDate() {
 		return modifiedDate;
 	}
-	public void setModifiedDate(LocalDateTime modifiedDate) {
-		modifiedDate = LocalDateTime.now(); 
+	public void setModifiedDate(String modifiedDate) {
 		this.modifiedDate = modifiedDate;
 	}
     

@@ -27,19 +27,23 @@ public class BoardService implements IBoardService {
 
 		@Override
 		public void updateboard(BoardVO boa) {
-			// TODO Auto-generated method stub
-			
+			dao.updateboard(boa);
 		}
 
 		@Override
-		public void deleteboard(BoardVO boa) {
-			// TODO Auto-generated method stub
+		public void deleteboard(String id) {
+			dao.deleteboard(id);
 			
 		}
 
 		@Override
 		public BoardVO boardread(String id) {
-			// TODO Auto-generated method stub
+
 			return dao.boardread(id);
+		}
+
+		@Override
+		public void updateviwe(String id) {
+	
 		}
 	}
