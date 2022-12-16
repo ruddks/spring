@@ -88,16 +88,18 @@
 <br />
 <h3>보러가기</h3>
 <br /><br />
+  <nav id="nav">
 <div id="mainMenuBox">
-<ul>
-<li><a href="#" id="seoul">서울</a></li>
-<li><a href="#" id="Gyeonggido">경기도</a></li>
-<li><a href="#" id="Gangwondo">강원도</a></li>
-<li><a href="#" id="Chungcheongdo">충청도</a></li>
-<li><a href="#" id="Jeollado">전라도</a></li>
-<li><a href="#" id="Gyeongsangdo">경상도</a></li>
-</ul>
+
+<a href="#" id="seoul">서울</a>
+<a href="#" id="Gyeonggido">경기도</a>
+<a href="#" id="Gangwondo">강원도</a>
+<a href="#" id="Chungcheongdo">충청도</a>
+<a href="#" id="Jeollado">전라도</a>
+<a href="#" id="Gyeongsangdo">경상도</a>
+
 </div>
+</nav>
 </div>
 <br />
 <br />

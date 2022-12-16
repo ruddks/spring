@@ -21,7 +21,8 @@
 			}
 			
 			table th{ 
-				background-color: skyblue;
+				background-color: #1C2938;
+				color:white;
 			}
 		</style>
 		<script src="<c:url value='/js/jquery-3.6.1.min.js'/>"></script>
@@ -30,7 +31,8 @@
 	<body>
 		<div id="wrap">
 		<c:import url="/WEB-INF/views/layout/festival_top.jsp" />  
-		<h3>축제 검색</h3>
+		<br><h3>축제 검색</h3>
+		<br>
 		<form id="fesSearchFrm">
 			<select id="type" name="type">
 				<option value="">검색 조건 선택</option>
@@ -40,10 +42,12 @@
 			<input type="text" name="keyword">
 			<input type="submit" value="검색">
 		</form>
-		
+		<br><hr>
 		<!-- 검색 결과 출력  -->
 		<div id="searchResultBox"></div>
+		<br><br><br><c:import url="/WEB-INF/views/layout/bottom.jsp" />
 		</div>
+		
 	</body>
 </html>
 

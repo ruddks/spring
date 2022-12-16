@@ -10,7 +10,7 @@
 	            	  	
 	          
 				
-        		<span id="a"><a href="<c:url value='/specialties'/>">전국 특산물</a>
+        		<span id="a"><a href="<c:url value='/specialties'/>">전국 특산물</a></span>
         		
 	           <div id="topMenuBox">
 						<!-- 로그인 하기 전에 보여줄 메뉴 항목 -->

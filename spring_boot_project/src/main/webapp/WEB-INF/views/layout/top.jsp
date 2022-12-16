@@ -8,7 +8,7 @@
 	            	</div>
 	            	
 	          <nav>  	
-	          
+	         
 				<div class="search">
 					<button id="fesBtn">축제 검색</button>&nbsp;
 					<button id="fesAllBtn">전체 축제 조회</button>
@@ -16,6 +16,7 @@
 					<button id="speBtn">특산물 검색</button>&nbsp;
 					<button id="speAllBtn">전체 특산물 조회</button>
 				</div>
+				
 		
 			</nav>
 	            	<div id="topMenuBox">

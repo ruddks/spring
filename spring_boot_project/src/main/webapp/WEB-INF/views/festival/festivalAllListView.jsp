@@ -8,12 +8,30 @@
 		<meta charset="UTF-8">
 		<title>트레블러</title>
 		<c:import url="/WEB-INF/views/layout/festival_head.jsp" />
+		<style>
+			#wrap{
+				margin:0 auto;
+				width: 100%;
+				text-align: center;
+			}
+			
+			table{
+				margin:0 auto;
+				width: 800px;
+			}
+			
+			table th{ 
+				background-color: #1C2938;
+				color:white;
+			}
+		</style>
 	</head>
 	<body>
 	
 		<div id="wrap">
 		<c:import url="/WEB-INF/views/layout/festival_top.jsp" />    
-			<h3>전체 축제 조회</h3>
+			<br><br><h3>전체 축제 조회</h3>
+			<br><hr><br><br><br>
 			<table border="1">
 					<tr>
 						<th>축제 목록 번호</th>
@@ -33,7 +51,6 @@
 			         </c:forEach>
 				</table><br><br>
 				
-				<a href="<c:url value='/'/>">메인 화면으로 이동</a>
 			</div>
 	</body>
 </html>

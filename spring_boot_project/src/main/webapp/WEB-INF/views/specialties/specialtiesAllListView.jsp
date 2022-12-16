@@ -7,10 +7,30 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>트레블러</title>
+		<c:import url="/WEB-INF/views/layout/specialties_head.jsp" />
+		<style>
+			#wrap{
+				margin:0 auto;
+				width: 100%;
+				text-align: center;
+			}
+			
+			table{
+				margin:0 auto;
+				width: 800px;
+			}
+			
+			table th{ 
+				background-color: #1C2938;
+				color:white;
+			}
+		</style>
+		
 	</head>
 	<body>
 	
 		<div id="wrap">
+		<c:import url="/WEB-INF/views/layout/specialties_top.jsp" />
 			<h3>전체 특산물 조회</h3>
 			<table border="1">
 					<tr>
@@ -29,7 +49,6 @@
 			         </c:forEach>
 				</table><br><br>
 				
-				<a href="<c:url value='/'/>">메인 화면으로 이동</a>
 			</div>
 	</body>
 </html>

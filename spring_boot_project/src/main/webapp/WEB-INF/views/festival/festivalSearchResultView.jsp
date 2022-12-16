@@ -39,7 +39,6 @@
 			   </c:choose>      
 				</table><br><br>
 				
-				<a href="<c:url value='/'/>">메인 화면으로 이동</a>
 			</div>
 	</body>
 </html>
