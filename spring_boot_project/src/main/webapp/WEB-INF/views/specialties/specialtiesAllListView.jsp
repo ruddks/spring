@@ -11,13 +11,13 @@
 	<body>
 	
 		<div id="wrap">
-			<h3>전체 특산품 조회</h3>
+			<h3>전체 특산물 조회</h3>
 			<table border="1">
 					<tr>
-						<th>특산품 목록 번호</th>
-						<th>특산품명</th>
-						<th>특산품 설명</th>
-						<th>특산품 지역</th>
+						<th>특산물 목록 번호</th>
+						<th>특산물명</th>
+						<th>특산물 설명</th>
+						<th>특산물 지역</th>
 					</tr>
 					<c:forEach var="spe" items="${speList }">
 			            <tr>

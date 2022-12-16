@@ -24,7 +24,7 @@
  				$('#searchResultBox').empty(); // 이전 내용 비우고
  				// 테이블 제목 출력
  				$('#searchResultBox').append('<table id="resultTable" border="1" width="600">' + 
-						'<tr><th>특산품 목록 번호</th><th>특산품명</th><th>특산품 설명</th><th>특산품 지역</th></tr>');
+						'<tr><th>특산물 목록 번호</th><th>특산물명</th><th>특산물 설명</th><th>특산물 지역</th></tr>');
 						
 				// 검색 결과 없는 경우
 				if(result == ""){

@@ -72,6 +72,7 @@ input[type="email"]{
 	padding:5px 13px;
 	background:#EEEFF1;
 	color:#1C2938;
+	cursor:pointer;
 	box-shadow:3px 3px 10px 1px rgba(0, 0, 0, .2),
 			   -3px -3px 10px 1px rgba(240, 240, 240, 1);
 }
@@ -102,8 +103,10 @@ input[type="reset"]{
 	color:#fff;
     margin-left: 10px;
     color: white;
+    cursor:pointer;
     
 }
+
 
 #joinForm input[type="submit"]{
 	background:#425587;

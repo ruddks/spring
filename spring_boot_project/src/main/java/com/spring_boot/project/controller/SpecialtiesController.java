@@ -48,7 +48,7 @@ public class SpecialtiesController {
 		return	"/specialties/specialties_전라도";
 	}
 	
-	// 전체 특산품 조회 : 서비스 요청 (요청 이름 :/specialties/specialtiesListAll)
+	// 전체 특산물 조회 : 서비스 요청 (요청 이름 :/specialties/specialtiesListAll)
 			@RequestMapping("/specialties/specialtiesListAll")
 			public String viewspecialtiesListAll(Model model) {
 				ArrayList<SpecialtiesVO> speList = service.listAllSpecialties();
@@ -56,13 +56,13 @@ public class SpecialtiesController {
 				return "/specialties/specialtiesAllListView"; //specialtiesAllListView.jsp 페이지로 출력
 			}
 		
-		// 특산품 검색 폼1 열기
+		// 특산물 검색 폼1 열기
 			@RequestMapping("/specialties/specialtiesSearchForm")
 			public String specialtiesSearchForm() {
 				return "/specialties/specialtiesSearchForm";
 			}
 			
-			// 특산품 검색1 처리
+			// 특산물 검색1 처리
 			@ResponseBody
 			@RequestMapping("/specialties/specialtiesSearch")
 			public ArrayList<SpecialtiesVO> specialtiesSearch(@RequestParam HashMap<String, Object> param,

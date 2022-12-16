@@ -6,7 +6,8 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>상품 검색</title>
+		<title>트래블러</title>
+		<c:import url="/WEB-INF/views/layout/festival_head.jsp" />
 		<style>
 			#wrap{
 				margin:0 auto;
@@ -28,7 +29,8 @@
 	</head>
 	<body>
 		<div id="wrap">
-		<h3>상품 검색</h3>
+		<c:import url="/WEB-INF/views/layout/festival_top.jsp" />  
+		<h3>축제 검색</h3>
 		<form id="fesSearchFrm">
 			<select id="type" name="type">
 				<option value="">검색 조건 선택</option>

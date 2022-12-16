@@ -7,11 +7,12 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>트레블러</title>
-	<a>검색</a>	
+		<c:import url="/WEB-INF/views/layout/festival_head.jsp" />
 	</head>
 	<body>
 	
 		<div id="wrap">
+		<c:import url="/WEB-INF/views/layout/festival_top.jsp" />    
 			<h3>전체 축제 조회</h3>
 			<table border="1">
 					<tr>

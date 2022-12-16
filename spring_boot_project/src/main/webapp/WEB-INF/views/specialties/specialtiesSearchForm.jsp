@@ -6,7 +6,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>상품 검색</title>
+		<title>트래블러</title>
 		<style>
 			#wrap{
 				margin:0 auto;
@@ -23,16 +23,19 @@
 				background-color: skyblue;
 			}
 		</style>
+		 <c:import url="/WEB-INF/views/layout/specialties_head.jsp" />
 		<script src="<c:url value='/js/jquery-3.6.1.min.js'/>"></script>
 		<script src="<c:url value='/js/specialtiesSearch.js'/>"></script>
 	</head>
 	<body>
 		<div id="wrap">
-		<h3>상품 검색</h3>
+		<c:import url="/WEB-INF/views/layout/specialties_top.jsp" />
+		<h3>특산물 검색</h3>
+		
 		<form id="speSearchFrm">
 			<select id="type" name="type">
 				<option value="">검색 조건 선택</option>
-				<option value="speName">특산품명</option>
+				<option value="speName">특산물명</option>
 				<option value="regionName">지역</option>
 			</select>
 			<input type="text" name="keyword">

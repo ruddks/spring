@@ -57,7 +57,7 @@ ul{
 	margin-top:50px;
 }
 hr {
-    background:#bfeaff;
+    background:#1C2938;
     height:1px;
     border:0;
 }
@@ -72,8 +72,8 @@ hr {
 	text-decoration:none;
 	width:15%;
 	height:150px; 
-	border:1px solid #bfeaff; 
-	background-color:#bfeaff;
+	border:1px solid #1C2938; 
+	background-color:#1C2938;
 	border-radius: 15px;
 }
 #board div:first-child{
@@ -100,7 +100,7 @@ hr {
 }
 
 h3{
-	color:#bfeaff;
+	color:#1C2938;
 	font-weight:bold;
 	font-size:25px;
 }
@@ -116,13 +116,13 @@ h3{
 }
 .search input {
   font-size: 18px;
-  border:3px solid #bfeaff; 
+  border:3px solid #1C2938; 
   border-radius: 15px;
 }
 .search button {
   font-size: 18px;
   border: none;
-  background-color: #bfeaff; 
+  background-color: #1C2938; 
   width: 50px;
   height: 30px;
   border-radius: 15px;
